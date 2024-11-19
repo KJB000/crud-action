@@ -25,7 +25,7 @@ export default function TopicsList({ topics }: TopicsListProps) {
             </div>
           </div>
           <div className="flex gap-2">
-            <RemoveBtn title={topic._title} />
+            <RemoveBtn id={topic._id} />
             <Link href={`/editTopic/${topic._id}`}>
               <HiPencilAlt size={24} />
             </Link>
